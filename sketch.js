@@ -1,6 +1,10 @@
 let start;
 let end;
 
+function setup(){
+	noCanvas();
+}
+
 function calcRoute(){
 	start=document.getElementById('start').value;
 	end=document.getElementById('end').value;
