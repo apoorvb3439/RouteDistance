@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>RouteDistance</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<style>
+		body{
+			background-image: url('background.png');
+			font-size: 150%;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>
+		Route Distance Calculator :
+	</h1>
+	<p>
+		<label for="start">Enter Latitude Longitude for first Point </label>
+		<input type="text" name="start" id="start" placeholder="eg. 28,71"/>
+
+		<label for="startAddr"> Address </label>
+		<input type="text" name="startAddr" id="startAddr" placeholder="Dont Enter here"/>
+	</p>
+
+	<p>
+		<label for="end">Enter Latitude Longitude for Second Point </label>
+		<input type="text" name="end" id="end" placeholder="eg. 28,71"/>
+
+		<label for="endAddr"> Address </label>
+		<input type="text" name="endAddr" id="endAddr" placeholder="Dont Enter here"/>
+	</p>
+
+	<p>
+		<input type="submit" value="Calculate Route Distance" onclick="calcRoute()" />
+	</p>
+
+	<p>
+		<label for="distance"> Distance (meters): </label>
+		<input type="text" name="distance" id="distance" />
+	</p>
+
+	<p>
+		<label for="duration"> Time Needed: </label>
+		<input type="text" name="duration" id="duration" />
+	</p>
+
+</body>
+</html>
