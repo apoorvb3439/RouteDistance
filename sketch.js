@@ -8,7 +8,7 @@ function setup(){
 function calcRoute(){
 	start=document.getElementById('start').value;
 	end=document.getElementById('end').value;
-	let url='http://maps.googleapis.com/maps/api/distancematrix/json?origins='+start+'&destinations='+end+'&mode=driving&language=en-EN&sensor=false';
+	let url='https://maps.googleapis.com/maps/api/distancematrix/json?origins='+start+'&destinations='+end+'&mode=driving&language=en-EN&sensor=false';
 	loadJSON(url,printData);
 }
 
